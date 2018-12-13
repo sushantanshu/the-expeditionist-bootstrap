@@ -8,13 +8,13 @@ img{
     width:100vw;
 }
 #about-me{
-    background: url("img/pic6.jpg") center center no-repeat;
+    background: url("../img/pic6.jpg") center center no-repeat;
     background-size: cover;
     width:100vw;
     height: 100vh;
 }
 #cover{
-    background: #222 url('img/pic6.jpg') center center no-repeat;
+    background: #222 url('../img/pic6.jpg') center center no-repeat;
     background-size: cover;
     width:100vw;
     height: 50vh;
@@ -24,7 +24,7 @@ img{
     padding: 5rem 0;
 }
 #about{
-    background: url("img/girlincar.jpg") center center no-repeat;
+    background: url("../img/girlincar.jpg") center center no-repeat;
     background-size: cover;
     height:100%;
 }
