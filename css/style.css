@@ -16,8 +16,8 @@ img{
 #cover{
     background: #222 url('../img/pic6.jpg') center center no-repeat;
     background-size: cover;
-    width:100vw;
-    height: 50vh;
+    width:auto;
+    height: auto;
 
 }
 .section-content{
@@ -26,12 +26,14 @@ img{
 #about{
     background: url("../img/girlincar.jpg") center center no-repeat;
     background-size: cover;
-    height:100%;
+    height:auto;
+    width: auto;
 }
-.about-text,.jumbotron{
+.jumbotron{
     background: rgba(0,0,0,0.8);
     color: white;
     padding : 1rem;
+    size: inherit;
 }
 #footer-main{
     background: black;
@@ -57,25 +59,6 @@ img{
     margin-bottom: 2rem;
     border: 0;
   }
-  @media screen and (min-width:600px){
-    .card {
-      float: left;
-      width: 50%;
-      padding: .75rem;
-      margin-bottom: 2rem;
-      border: 0;
-    }
-  }
-  @media screen and (min-width:1000px){
-    .card {
-      float: left;
-      width: calc(100%/3);
-      padding: .75rem;
-      margin-bottom: 2rem;
-      border: 0;
-    }
-  }
-  
   .card > img {
     margin-bottom: .75rem;
   }
@@ -93,7 +76,7 @@ img{
       z-index:-1;
   }
   #gallery .carousel-inner{
-      height: 90vh;
+      height: auto;
   }
   .col-form-label{
       color: black;
@@ -115,10 +98,80 @@ img{
     background: none !important;
     height: 30vh;
     width: 50vw;
- }
-section,footer{
-    z-index:-1;
 }
 .nav-tabs li{
      flex:1;
 }
+  @media screen and (min-width:600px){
+    .card {
+      float: left;
+      width: 50%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+    #gallery .carousel-inner{
+        height: 90vh;
+    }
+    .jumbotron{
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding : 1rem;
+    }
+    .map{
+        width:auto;;
+        height:auto;;
+    }
+  
+  .mapouter {
+      text-align: left;
+      height: 50vh;
+      width: 50vw;
+      padding:1rem;
+  }
+  
+  .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 30vh;
+      width: 50vw;
+  }
+  }
+  @media screen and (min-width:1000px){
+    .card {
+      float: left;
+      width: calc(100%/3);
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+    #gallery .carousel-inner{
+        height: 90 vh;
+    }
+    .jumbotron{
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding : 1rem;
+    }
+    .map{
+        width:100vw;
+        height:50vh;
+    }
+  
+  .mapouter {
+      text-align: left;
+      height: 50vh;
+      width: 50vw;
+      padding:1rem;
+  }
+  
+  .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 30vh;
+      width: 50vw;
+   }
+  
+  }
+  
+  
