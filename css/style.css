@@ -16,7 +16,7 @@ img{
 #cover{
     background: #222 url('../img/pic6.jpg') center center no-repeat;
     background-size: cover;
-    width:auto;
+    width:100vw;
     height: auto;
 
 }
@@ -54,8 +54,8 @@ img{
   
   .card {
     float: left;
-    width: 100%;
-    padding: .75rem;
+    width: 100vh;
+    padding: 1rem;
     margin-bottom: 2rem;
     border: 0;
   }

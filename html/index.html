@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <section class="container-fluid">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +47,7 @@
             </form>
         </div>
     </nav>
+    </section>
 
     <section id="about-me">
         <div class="section-content">
@@ -66,7 +68,7 @@
         </div>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="container-fluid">
         <h1>Gallery</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -97,7 +99,7 @@
     </section>
     <section id="blogs">
         <div class="album text-muted">
-            <div class="container">
+            <div class="container-fluid">
 
                 <div class="row">
                     <div class="card">
@@ -177,7 +179,7 @@
     </section>
     <section id="about">
         <div class="section-content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="col-md-6">
                     <div class="jumbotron">
                         <h1>About Me</h1>
@@ -244,7 +246,7 @@
             </div>
         </div>
     </section>
-    <section class="map">
+    <section class="container-fluid">
             <div class="mapouter">
                 <h4>Search on Map</h4>
                 <div class="gmap_canvas"><iframe width=auto height=auto id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
@@ -253,9 +255,9 @@
             </div>
     
             <!--Google Maps-->
-        </section>
+    </section>
     <footer id="footer-main">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4">
                         <p>Copyright 2018 · All rights reserved ·<br>
@@ -282,35 +284,36 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <ul class="nav nav-tabs d-flex">
-                    <li class="active"><a data-toggle="tab" href="#Abt">About</a></li>
-                    <li><a data-toggle="tab" href="#Career">Career </a></li>
-                    <li><a data-toggle="tab" href="#FAQ">FAQ </a></li>
-                    <li><a data-toggle="tab" href="#Help">Help </a></li>
-                </ul>
-    
-                <div class="tab-content">
+            
+        <ul class="nav nav-tabs">
+                <li class="nav-item active">
+                  <a class="nav-link" data-toggle="tab" href="#Abt">About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"data-toggle="tab" href="#Career">Career</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"data-toggle="tab" href="#FAQ">FAQ</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link "data-toggle="tab" href="#Help">Help</a>
+                </li>
+              </ul>
+              <div class="tab-content">
                     <div id="Abt" class="tab-pane fade in active">
-                        <h3>About </h3>
-                        <p>We are travel blogger and travel consultancy firm</p>
+                        <p><h6>We are travel blogger and travel consultancy firm</h6></p>
                     </div>
                     <div id="Career" class="tab-pane fade">
-                        <h3>Career </h3>
-                        <p>Search for open positions.</p>
+                        <p><h6>Search for open positions</h6></p>
                     </div>
                     <div id="FAQ" class="tab-pane fade">
-                        <h3>FAQ </h3>
-                        <p>Hi guest,How can we help you?</p>
+                        <p><h6>Hi Guest, These are the FAQs.</h6></p>
                     </div>
                     <div id="Help" class="tab-pane fade">
-                        <h3>Help </h3>
-                        <p>Hello. What can we help you with?</p>
+                        <p><h6>Hello. What can we help you with ?</h6></p>
                     </div>
-                </div>
-            </div>
-    
-        </footer>
+                </div>   
+    </footer>
     <!--Jquery first then bootstrap css-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -318,7 +321,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
